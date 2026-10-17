@@ -115,6 +115,24 @@ Switch(config)# exit
 Switch# show running-config
 Switch# copy running-config startup-config</pre>
 
+    <h3>Abreviaturas válidas en Packet Tracer</h3>
+    <p class="note">Packet Tracer acepta las abreviaturas estándar de Cisco IOS (el prefijo mínimo sin ambigüedad). Todos los comandos de esta guía funcionan igual escritos así, para ganar tiempo en el examen:</p>
+    <pre>enable                                → en
+configure terminal                    → conf t
+interface fastethernet 0/1            → int fa0/1
+interface vlan 10                     → int vlan 10
+switchport mode access                → sw mode access
+switchport access vlan 10             → sw access vlan 10
+switchport mode trunk                 → sw mode trunk
+switchport trunk allowed vlan 10,20   → sw trunk allowed vlan 10,20
+ip address 192.168.1.1 255.255.255.0  → ip addr 192.168.1.1 255.255.255.0
+no shutdown                           → no shut
+show running-config                   → sh run
+show vlan brief                       → sh vlan br
+show ip interface brief               → sh ip int br
+copy running-config startup-config    → copy run start</pre>
+    <p class="note">Si Packet Tracer responde con error de comando ambiguo, escribe una letra más (por ejemplo <code>sh</code> puede fallar en algún menú y necesitar <code>sho</code>).</p>
+
     <h3>VLAN y puertos de acceso</h3>
     <pre>Switch(config)# vlan 10
 Switch(config-vlan)# name Contabilidad
